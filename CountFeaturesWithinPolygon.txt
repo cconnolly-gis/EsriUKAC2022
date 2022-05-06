@@ -1,0 +1,10 @@
+//Calculate the number of schools within each MSOA
+
+//Get geometries of primary schools
+var primarySchools = Filter(FeatureSetByName($map, "OS OpenMap Local Important Buildings"), "CLASSIFICA = 'Primary Education'")
+
+//Count number of primary schools within each MSOA
+var countPrimarySchools = Count(Intersects(primarySchools, $feature))
+
+//Result
+return countPrimarySchools

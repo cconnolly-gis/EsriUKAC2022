@@ -1,0 +1,10 @@
+//Determine whether a building is within 50m of Flood Zone 3
+
+//Get geometry of Flood Zone 3
+var floodZones = FeatureSetByName($map, "Flood Zone 3")
+
+//Buffer building feature by 50m
+var buildingsBuffered = Buffer($feature, 50, "meters")
+
+//Count number of intersections to determine if building is within 50m of flood zone
+return IIF(Count(Intersects(buildingsBuffered, floodZones)) > 0, "Yes", "No")

@@ -1,0 +1,7 @@
+//Calculate % change in 5-11 population between 2012-2020
+
+//Calculate % change
+var populationChange = ($feature.ID25433D0 - $feature.ID25433DM8) / $feature.ID25433DM8 * 100
+
+//Result to 1 decimal place
+return Round(populationChange, 1)

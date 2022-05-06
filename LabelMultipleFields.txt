@@ -1,0 +1,3 @@
+//Label features using MSOA Name and MSOA Code
+
+$feature.NAME + " (" + $feature.MSOACode + ")"

@@ -1,0 +1,3 @@
+//Apply title casing to text field
+
+Proper($feature.LOCALITY)

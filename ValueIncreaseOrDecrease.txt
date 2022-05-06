@@ -1,0 +1,3 @@
+//State whether population increased or decreased between 2012-2020
+
+IIf($feature.ID25432D0 > $feature.ID25432DM8, 'increased', 'decreased')
